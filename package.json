@@ -1,0 +1,31 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "Local chat",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikhail-hatsilau/chat.git"
+  },
+  "author": "Mikhail Hatsilau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikhail-hatsilau/chat/issues"
+  },
+  "homepage": "https://github.com/mikhail-hatsilau/chat#readme",
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "express": "~4.13.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-coffee": "^1.0.0",
+    "jade": "~1.11.0",
+    "morgan": "~1.6.1",
+    "serve-favicon": "~2.3.0"
+  }
+}
