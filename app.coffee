@@ -1,13 +1,16 @@
 express = require 'express'
+http = require 'http'
 path = require 'path'
 favicon = require 'serve-favicon'
 logger = require 'morgan'
 cookieParser = require 'cookie-parser'
 bodyParser = require 'body-parser'
-
+socketio = require 'socket.io'
 routes = require './routes/index'
 
 app = express()
+server = http.Server app
+io = socketio server
 
 # view engine setup
 app.set 'views', path.join(__dirname, 'views')
@@ -50,5 +53,13 @@ app.use (err, req, res, next) ->
     error: {}
   }
 
+#socket events
+io.on 'connection', (socket) ->
+  socket.on 'connect user', (user, callback) ->
+    console.log user
+    socket.broadcast.emit 'user connected', user
+    callback()
+
+server.listen 3000
 
 module.exports = app

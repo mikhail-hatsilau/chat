@@ -1,5 +1,6 @@
 *.js
 *.*~
 *.log
-
+*.css
 node_modules/
+bower_components/

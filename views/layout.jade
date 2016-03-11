@@ -2,6 +2,15 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+    link(rel='stylesheet', href='/stylesheets/styles.css')
+  body(ng-app="chatApp")
+    .header
+      a.brand-logo(href="/") Local chat
+    .content
+      block content
+    .footer
+    script(src="/javascripts/vendor/_bower.js")
+    script(src="/socket.io/socket.io.js")
+    script(src="/javascripts/modules/app.module.js")
+    script(src="/javascripts/controllers/main.controller.js")
+    script(src="/javascripts/services/socket.factory.js")

@@ -1,0 +1,30 @@
+{
+  "name": "chat",
+  "description": "Local chat",
+  "main": "index.js",
+  "authors": [
+    "Mikhail Hatsilau"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/mikhail-hatsilau/chat",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.1",
+    "velocity": "~1.2.3",
+    "moment": "~2.12.0",
+    "angular": "~1.5.0",
+    "lumx": "~0.3.96",
+    "mdi": "~1.5.54",
+    "bourbon": "~4.2.6"
+  },
+  "resolutions": {
+    "mdi": "1.2.65"
+  }
+}
